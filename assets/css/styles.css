@@ -1,0 +1,45 @@
+html{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    font-size: 2rem;
+    font-family: "League Spartan", serif;
+    font-weight: normal;
+    
+}
+
+:root{
+    --branco: #FFFFFF;
+    --preto: #14281D;
+    --claro: #E8EAED;
+
+    --verdeEsmeralda: #29513B;
+    --verdeAgua: #A0CFB5;
+    --verdePrincipal: #74AC72;
+    --verdeFolha: #355834;
+    --verdeOlivaClaro: #80B47E;
+
+    --azulEscuro: #264653;
+    --azulClaro: #2A9D8F;
+    --amarelo: #E9C46A;
+    --laranja: #F4A261;
+    --vermelho: #E76F51;
+}
+
+body {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "nada" "conteudo" "nada";
+}
+
+main {
+    width: 393px;
+    grid-area: conteudo;
+
+}
