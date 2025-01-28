@@ -1,0 +1,43 @@
+main {
+    background-color: var(--verdeEsmeralda);
+    justify-content: center;
+}
+
+h1{
+    font-size: 4rem;
+    width: 12rem;;
+}
+
+label, p, a, h1{
+    color: var(--claro);
+}
+
+h1, form{
+    margin: 3rem 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    background-color: #C3D5C8;
+    opacity: 52%;
+}
+
+.button{
+    background-color: var(--claro);
+    color: var(--verdeEsmeralda);
+    align-self: center;
+}
+
+#cadastro{
+    align-self: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    opacity: 70%;
+}
+
+
+
