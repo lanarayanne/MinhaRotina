@@ -1,0 +1,47 @@
+main {
+    background-color: var(--verdeAgua);
+    justify-content: top;
+    color: var(--verdeEsmeralda);
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 4rem 2rem 2rem 2rem;
+}
+
+#foto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+#foto span{
+    color: var(--verdeAgua);
+    height: 14rem;
+    width: 14rem;
+    border-radius: 100%;
+    background-color: var(--branco);
+    opacity: 50%;
+    align-content: center;
+    font-size: 4rem;
+}
+
+.box{
+    opacity: 50%;
+}
+
+.button{
+    background-color: #355834;
+    color: var(--claro);
+    align-self: center;
+}
+

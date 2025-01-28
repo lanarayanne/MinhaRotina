@@ -8,10 +8,10 @@
     <!-- estilos -->
 
     <link rel="stylesheet" type="text/css" href="assets\css\styles.css" />
-    <link rel="stylesheet" type="text/css" href="assets\css\main.css" />
+    <link rel="stylesheet" type="text/css" href="assets\css\login.css" />
     <link
       rel="shortcut icon"
-      href="assets\images\logo\LogoTads.svg"
+      href=""
       type="image/x-icon"
     />
 
@@ -32,18 +32,22 @@
 
 </head>
 <body>
+  <div></div>
     <main>
         <h1>Minha Rotina</h1>
         <form action="">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha">
-            <input type="submit" value="Entrar" id="entrar">
+            <label for="email">E-mail*</label>
+            <input type="email" name="email" id="email" class="box">
+            <label for="senha">Senha*</label>
+            <input type="password" name="senha" id="senha" class="box">
+            <input type="submit" value="Entrar" id="entrar" class="button">
         </form>
+        <div id="cadastro">
         <p>Não tem conta?</p>
-        <a href="">Cadastre-se</a>
+        <a href="cadastro.html">Cadastre-se</a>
+      </div>
     </main>
+    <div></div>
 </body>
 
 </html>
