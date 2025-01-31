@@ -17,14 +17,14 @@ h1{
     margin: 4rem 2rem 2rem 2rem;
 }
 
-#foto{
+#photo{
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 0rem 2rem 0rem 2rem;
 }
 
-#foto span{
+#photo span{
     color: var(--verdeAgua);
     height: 14rem;
     width: 14rem;
