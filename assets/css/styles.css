@@ -87,3 +87,39 @@ header h1{
 .icon span {
     font-size: 3rem;
 }
+
+
+.day_progress{
+    background-color: #e7eee962 ;
+    min-height: 1.5rem;
+    display: flex;
+}
+
+#percent{
+    font-size: 1rem;
+    color: var(--claro);
+    background-color: #264653;
+    width: 70%;
+    height: 100%;
+    align-content: center;
+    padding-left: 1rem ;
+}
+
+.menu{
+    background-color: #F1F5F2;
+    color: #14281D;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 9rem;
+}
+
+.menu_button span{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.iten_menu{
+    display: flex;
+    flex-direction: column;
+}

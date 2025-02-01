@@ -66,51 +66,74 @@
             </div>
 
             <div class="completed_extended">
-                <input type="checkbox" name="done_task" id="" class="done_tasks">
+                <input type="checkbox" name="done_task" id="" class="done_tasks" default: checked>
                 <label for="done_task">Tarefa Concluída</label>
             </div>
 
         </div>
         <div class="task_list">
             <div class="tasks">
-                
-                <input type="checkbox" name="tarefa" id="tarefa1" class="tarefas">
-                <label for="tarefa" class="task_name">Tarefa 1</label>
-                
-                <button class="task_icons"id="delete_task">
+                <input type="checkbox" name="task" id="task1" class="not_done_task">
+                <div class="task_name">
+                    <label for="task">Tarefa 1</label>
+                    <p class="time">7:00</p>
+                </div>
+                <button class="task_icons" id="delete_task">
                     <span class="material-symbols-outlined">
                         close
-                        </span>
-                </button >
+                    </span>
+                </button>
                 <button class="task_icons" id="skip_task">
                     <span class="material-symbols-outlined">
                         skip_next
-                        </span>
+                    </span>
                 </button>
             </div>
         </div>
 
-        <div class="progresso_dia">
-            70%
+        <div class="day_progress">
+            <p id="percent">70%</p>
         </div>
 
         <footer class="menu">
-            <span class="material-symbols-outlined">
-                star
-            </span>
-            <p>Rotina</p>
-            <span class="material-symbols-outlined">
-                calendar_month
-            </span>
-            <p>Calendário</p>
-            <span class="material-symbols-outlined">
-                task_alt
-            </span>
-            <p>Tarefas</p>
-            <span class="material-symbols-outlined">
-                person
-            </span>
-            <p>Perfil</p>
+
+            <div class="iten_menu">
+                <button class="menu_button">
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                </button>
+                <p>Rotina</p>
+
+            </div>
+
+            <div class="iten_menu">
+                <button class="menu_button">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
+                </button>
+                <p>Calendário</p>
+            </div>
+
+            <div class="iten_menu">
+                <button class="menu_button">
+                    <span class="material-symbols-outlined">
+                        task_alt
+                    </span>
+                </button>
+                <p>Tarefas</p>
+            </div>
+
+            <div class="iten_menu">
+                <button class="menu_button">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </button>
+                <p>Perfil</p>
+            </div>
+
         </footer>
 
         <section>
