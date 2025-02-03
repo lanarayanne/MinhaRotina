@@ -152,6 +152,10 @@ header, #sort, #add{
     max-width: 15rem;
 }
 
+#routine_menu{
+    border-top: #14281D solid 0.5rem;
+}
+
 /*
     text-align: center;
     align-items: center;

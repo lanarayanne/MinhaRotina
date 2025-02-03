@@ -41,55 +41,77 @@
                 <label for="name">Nome*</label>
                 <input type="text" name="name" id="name" class="box" required>
                 <label for="periodicy">Periodicidade*</label>
-                <button class="option_button">Evento Único</button>
-                <button class="option_button">Com Repetição</button>
+                <div class="buttons_div">
+                    <button class="option_button">Evento Único</button>
+                    <button class="option_button">Com Repetição</button>
+                </div>
             </form>
             <form action="" class="single">
                 <input type="date" name="date" class="box" placeholder="Selecionar Data">
                 <input type="time" name="time" class="box" placeholder="Selecionar Horário">
-                <button type="submit" id="save" class="button"> Salvar </button>
-                <button type="submit" id="cancel" class="button"> Cancelar </button>
+                <div class="buttons_div">
+                    <button type="submit" id="save" class="button"> Salvar </button>
+                    <button type="submit" id="cancel" class="button"> Cancelar </button>
+                </div>
+
             </form>
 
-            <form action="" class="repeat">
-                <label for="each"> A cada </label>
-                <input type="number" name="each" min="0" step="1">
-                <select name="frequency_type">
-                    <option value="day">Dia</option>
-                    <option value="week">Semana</option>
-                    <option value="month">Mês</option>
-                    <option value="year">Ano</option>
-                </select>
-                <button class="week_day">D</button>
-                <button class="week_day">S</button>
-                <button class="week_day">T</button>
-                <button class="week_day">Q</button>
-                <button class="week_day">Q</button>
-                <button class="week_day">S</button>
-                <button class="week_day">S</button>
+            <form action="" class="repeat" hidden>
+                <div class="frequency">
+                    <label for="each"> A cada </label>
+                    <input type="number" name="each" min="0" step="1" class="number_select">
+                    <select name="frequency_type" class="select">
+                        <option value="day">Dia(s)</option>
+                        <option value="week">Semana(s)</option>
+                        <option value="month">Mês(es)</option>
+                        <option value="year">Ano(s)</option>
+                    </select>
+                </div>
+                <div class="days_of_week">
+                    <button class="week_day">D</button>
+                    <button class="week_day">S</button>
+                    <button class="week_day">T</button>
+                    <button class="week_day">Q</button>
+                    <button class="week_day">Q</button>
+                    <button class="week_day">S</button>
+                    <button class="week_day">S</button>
 
+                </div>
+
+                <label for="time">Definir Horário</label>
                 <input type="time" name="time" class="box" placeholder="Selecionar Horário">
+                <label for="date">Definir data de início</label>
                 <input type="date" name="date" class="box" placeholder="Data de Início" required>
+                <label for="date">Definir data de fim</label>
                 <input type="date" name="date" class="box" placeholder="Data de Fim" required>
                 <label for="goal">Definir Meta</label>
-                <input type="number" name="goal" id="">
+                <input type="number" name="goal" id="" class="goal_select">
 
-                <legend>Se não concluída, a tarefa deve ser: *</legend>
-                <label>
-                    <input type="radio" name="opcao" value="opcao1">
-                    Ignorada até a próxima ocorrência
-                </label>
-                <label>
-                    <input type="radio" name="opcao" value="opcao2">
-                    Movida para o dia Seguinte e manter as próximas
-                </label>
+                <div class="not_done">
+                    <legend>Se não concluída, a tarefa deve ser: *</legend>
 
-                <label>
-                    <input type="radio" name="opcao" value="opcao2">
-                    Movida para o dia Seguinte e mover as próximas </label>
+                    <label>
+                        <input type="radio" name="opcao" value="opcao1">
+                        Ignorada até a próxima ocorrência
+                    </label>
 
-                <button type="submit" id="save" class="button"> Salvar </button>
-                <button type="submit" id="cancel" class="button"> Cancelar </button>
+                    <label>
+                        <input type="radio" name="opcao" value="opcao2">
+                        Movida para o dia seguinte e MANTER as próximas
+                    </label>
+
+                    <label>
+                        <input type="radio" name="opcao" value="opcao2">
+                        Movida para o dia seguinte e MOVER as próximas
+                    </label>
+
+                </div>
+
+                <div class="buttons_div">
+
+                    <button type="submit" id="save" class="button"> Salvar </button>
+                    <button type="submit" id="cancel" class="button"> Cancelar </button>
+                </div>
             </form>
         </div>
 

@@ -114,12 +114,26 @@ header h1{
     height: 9rem;
 }
 
-.menu_button span{
+.menu_link span{
     font-size: 4rem;
     text-align: center;
+    width: 8rem;
+    margin-bottom: 0.5rem;
 }
 
 .iten_menu{
+    height: 100%;
+    align-content: center;
+}
+
+.iten_menu a{
+    color: #14281D;
+}
+
+.menu_link{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+

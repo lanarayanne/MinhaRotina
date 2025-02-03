@@ -1,0 +1,169 @@
+main{
+    background-color: #74AC72;
+    justify-content: top;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1{
+    color: #141414;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem 1rem 2rem;
+}
+
+label{
+    color: var(--claro);
+}
+
+.box{
+    background-color: rgba(20, 40, 29, 0.32);
+}
+
+.buttons_div{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    border-radius: 1rem;
+    height: 3.2rem;
+    width: 15rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.option_button{
+    background-color: rgba(20, 40, 29, 0.32); 
+    color: var(--claro);
+    /* background-color: rgba(20, 40, 29, 1); */
+}
+
+input{
+    color: var(--claro);
+}
+
+.single{
+    flex-grow: 1;
+    /* display: none; */
+}
+
+.button{
+    background-color: var(--claro);
+    color: rgba(20, 40, 29, 1);
+}
+.single .buttons_div{
+    flex-grow: 1;
+    align-items: end;
+   
+}
+.repeat {
+    display: flex;
+    display: none;
+}
+
+.frequency{
+    display: flex;
+    justify-content: space-around;
+}
+
+.number_select{
+    width: 9rem;
+    height: 3rem;
+    background-color: rgba(20, 40, 29, 0.32);
+    text-align: center;
+    color: var(--claro);
+    border-radius: 1rem
+}
+
+.select{
+    width: 20rem;
+    height: 3rem;
+    background-color: rgba(20, 40, 29, 0.32);
+    text-align: center;
+    color: var(--claro);
+    border-radius: 1rem
+}
+
+select option{
+    background-color: #355834;
+    color: var(--claro);
+}
+
+.days_of_week{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.3rem;
+
+}
+
+.days_of_week button{
+    background-color: #C3D5C8;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    text-align: center;
+    text-justify: center;
+    color: #355834;
+
+    /* background-color: #355834 ; */
+    /* color: #C3D5C8; */
+}
+
+.goal_select{
+    height: 3rem;
+    background-color: rgba(20, 40, 29, 0.32);
+    text-align: center;
+    color: var(--claro);
+    margin: 1rem 0rem 1rem 0rem;
+    border-radius: 1rem;
+}
+
+legend{
+    color: var(--claro);
+}
+
+.not_done{
+    display: flex;
+    flex-direction: column;
+}
+
+.not_done label{
+    color:#141414;
+    margin: 1rem 0rem 1rem 0rem;
+    /* height: 3rem; */
+    width: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.not_done input{
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border: #141414 solid 0.3rem;
+    border-radius: 1rem;
+    flex-shrink: 0;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not_done input:checked::before {
+    content: "";
+    color: #141414;
+    background-color: #141414; /* Cor do marcador */
+    width: 1rem;  /* Tamanho do marcador interno */
+    height: 1rem;   
+    border-radius: 50%;
+}
