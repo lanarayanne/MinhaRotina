@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Rotina</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" type="text/css" href="assets\css\styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets\css\new_task.css" />
+
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- fontes -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div></div>
+    <main>
+        <header>
+            <h1>
+                Nova Tarefa
+            </h1>
+        </header>
+
+        <div class="informations">
+            <form action="" class="geral">
+                <label for="name">Nome*</label>
+                <input type="text" name="name" id="name" class="box" required>
+                <label for="periodicy">Periodicidade*</label>
+                <button class="option_button">Evento Único</button>
+                <button class="option_button">Com Repetição</button>
+            </form>
+            <form action="" class="single">
+                <input type="date" name="date" class="box" placeholder="Selecionar Data">
+                <input type="time" name="time" class="box" placeholder="Selecionar Horário">
+                <button type="submit" id="save" class="button"> Salvar </button>
+                <button type="submit" id="cancel" class="button"> Cancelar </button>
+            </form>
+
+            <form action="" class="repeat">
+                <label for="each"> A cada </label>
+                <input type="number" name="each" min="0" step="1">
+                <select name="frequency_type">
+                    <option value="day">Dia</option>
+                    <option value="week">Semana</option>
+                    <option value="month">Mês</option>
+                    <option value="year">Ano</option>
+                </select>
+                <button class="week_day">D</button>
+                <button class="week_day">S</button>
+                <button class="week_day">T</button>
+                <button class="week_day">Q</button>
+                <button class="week_day">Q</button>
+                <button class="week_day">S</button>
+                <button class="week_day">S</button>
+
+                <input type="time" name="time" class="box" placeholder="Selecionar Horário">
+                <input type="date" name="date" class="box" placeholder="Data de Início" required>
+                <input type="date" name="date" class="box" placeholder="Data de Fim" required>
+                <label for="goal">Definir Meta</label>
+                <input type="number" name="goal" id="">
+
+                <legend>Se não concluída, a tarefa deve ser: *</legend>
+                <label>
+                    <input type="radio" name="opcao" value="opcao1">
+                    Ignorada até a próxima ocorrência
+                </label>
+                <label>
+                    <input type="radio" name="opcao" value="opcao2">
+                    Movida para o dia Seguinte e manter as próximas
+                </label>
+
+                <label>
+                    <input type="radio" name="opcao" value="opcao2">
+                    Movida para o dia Seguinte e mover as próximas </label>
+
+                <button type="submit" id="save" class="button"> Salvar </button>
+                <button type="submit" id="cancel" class="button"> Cancelar </button>
+            </form>
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <div></div>
+
+</body>
+
+</html>
