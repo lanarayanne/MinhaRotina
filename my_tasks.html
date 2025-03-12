@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Rotina</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" type="text/css" href="assets\css\styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets\css\my_tasks.css" />
+
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <!-- fontes -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div></div>
+    <main>
+        <header>
+            <h1>
+                Minhas Tarefas
+            </h1>
+            <div class="icons">
+                <button class="icon">
+                    <span class="material-symbols-outlined" id="sort">sort</span>
+                </button>
+                <button class="icon">
+                    <span class="material-symbols-outlined" id="add">add</span>
+                </button>
+            </div>
+        </header>
+
+        <div class="flip">
+            <button id="repeat_button">Com Repetição</button>
+            <button id="no_repeat_button">Eventos Únicos</button>
+
+        </div>
+
+
+
+        <div class="task_repeat_list">
+            <div class="tasks">
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </a>
+
+                <div class="task_name">
+                    <label for="task">Tarefa 1</label>
+                    <p class="time">7:00</p>
+                </div>
+                <p class="cont">cont</p>
+                <p>/</p>
+                <p class="cont">cont</p>
+            </div>
+
+            <div class="tasks">
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </a>
+                <div class="task_name">
+                    <label for="task">Tarefa 2</label>
+                    <p class="time">7:00</p>
+                </div>
+                <p class="cont">cont</p>
+                <p>/</p>
+                <p class="cont">cont</p>
+            </div>
+        </div>
+
+        <div class="task_no_repeat_list">
+
+            <div class="completed">
+                <div class="completed_tab">
+                    <button>
+                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                    </button>
+                    <h2>Concluídas</h2>
+                </div>
+
+                <div class="completed_extended">
+                    <input type="checkbox" name="done_task" id="" class="done_tasks" default: checked>
+                    <label for="done_task">Tarefa Concluída</label>
+                </div>
+
+                <div class="completed_extended">
+                    <input type="checkbox" name="done_task" id="" class="done_tasks" default: checked>
+                    <label for="done_task">Tarefa Concluída 2</label>
+                </div>
+
+            </div>
+
+
+            <div class="tasks">
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        edit
+                    </span>
+                </a>
+                <div class="task_name">
+                    <label for="task">Tarefa 1</label>
+                    <p class="time"></p>
+                </div>
+
+                <button div class="calendar_plus">
+
+                    <span id="calendar" class="material-symbols-outlined">
+                        calendar_today
+                    </span>
+                    <span id="plus" class="material-symbols-outlined">
+                        add
+                    </span>
+
+                </button>
+            </div>
+        </div>
+
+        <div class="completed_tab" id="empty">
+            <button>
+                <span class="material-symbols-outlined">arrow_drop_down</span>
+            </button>
+            <h2>Concluídas</h2>
+        </div>
+
+        <div class="first_task" hidden>
+            <a href="" class="icon">
+                <span class="material-symbols-outlined" id="add">add</span>
+            </a>
+            <h2>Cadastre suas Tarefas </h2>
+        </div>
+
+
+        <footer class="menu">
+
+            <div class="iten_menu" id="routine_menu">
+                <a href="main.html" class="menu_link">
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                    <p>Rotina</p>
+                </a>
+
+            </div>
+
+            <div class="iten_menu" id="calender_menu">
+                <a href="calendar.html" class="menu_link">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
+                    <p>Calendário</p>
+                </a>
+            </div>
+
+            <div class="iten_menu" id="tasks_menu">
+                <a href="my_tasks.html" class="menu_link">
+                    <span class="material-symbols-outlined">
+                        task_alt
+                    </span>
+                    <p>Tarefas</p>
+                </a>
+            </div>
+
+            <div class="iten_menu" id="profile_menu">
+                <a href="profile.html" class="menu_link">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <p>Perfil</p>
+                </a>
+            </div>
+
+        </footer>
+
+    </main>
+    <div></div>
+
+</body>
+
+</html>

@@ -32,20 +32,20 @@
     <main>
         <header>
             <h1>Calendário</h1>
-            <button class="button">Visão Mensal</button>
-            <button class="button">Visão Anual</button>
+            <button id="monthly" class="button"><a href="calendar.html">Visão Mensal</a></button>
+            <button id="annual" class="button"><a href="calendar_anual.html">Visão Anual</a></button>
         </header>
 
         <div class="days">
             <button>
                 <span class="material-symbols-outlined">arrow_back_ios</span>
             </button>
-            <h2>Dia</h2>
+            <h2>Dia/ANO</h2>
             <button>
                 <span class="material-symbols-outlined">arrow_forward_ios</span>
             </button>
         </div>
-        
+
         <div class="month">
             <div class="week">
                 <p>Dom</p>
@@ -56,59 +56,62 @@
                 <p>Sex</p>
                 <p>Sab</p>
             </div>
-            
+
             <div class="calender_days">
                 <div class="line_days">
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
                 </div>
                 <div class="line_days">
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
                 </div>
                 <div class="line_days">
-                    <p> </p>
-                    <p></p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
                 </div>
                 <div class="line_days">
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
-                    <p> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
+                    <p role="button" tabindex="0"> </p>
                 </div>
-
-            </div>
-            <div class="legend">
-                <p> </p>
-                <p >0-20%</p>
-                <p> </p>
-                <p >21-40%</p>
-                <p> </p>
-                <p >41-60%</p>
-                <p> </p>
-                <p >61-80%</p>
-                <p> </p>
-                <p >81-100%</p>
             </div>
 
+        </div>
+
+        <div class="legend">
+            <p> </p>
+            <p>0-20%</p>
+            <p> </p>
+            <p>21-40%</p>
+            <p> </p>
+            <p>41-60%</p>
+            <p> </p>
+            <p>61-80%</p>
+            <p> </p>
+            <p>81-100%</p>
+        </div>
+
+        <div class="last_section">
             <div class="tasks_day">
                 <div class="title_tab">
                     <p>Sexta - 03.01.2025</p>
@@ -116,67 +119,65 @@
                     <p>/</p>
                     <p class="cont">cont</p>
                 </div>
-    
-                <div class="tasks_extended">
-                    <input type="checkbox" name="task" id="" class="tasks">
+
+                <div class="day_tasks">
+                    <input type="checkbox" name="task" id="" class="input">
+                    <label for="task">Nome da tarefa</label>
+                </div>
+                <div class="day_tasks">
+                    <input type="checkbox" name="task" id="" class="input">
                     <label for="task">Nome da tarefa</label>
                 </div>
             </div>
 
-            <footer class="menu">
+        </div>
 
-                <div class="iten_menu" id="routine_menu">
-                    <a href="" class="menu_link">
-                        <span class="material-symbols-outlined">
-                            star
-                        </span>
+        <footer class="menu">
+
+            <div class="iten_menu" id="routine_menu">
+                <a href="main.html" class="menu_link">
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
                     <p>Rotina</p>
                 </a>
-    
-                </div>
-    
-                <div class="iten_menu" id="calender_menu">
-                    <a href="" class="menu_link">
-                        <span class="material-symbols-outlined">
-                            calendar_month
-                        </span>
+
+            </div>
+
+            <div class="iten_menu" id="calender_menu">
+                <a href="calendar.html" class="menu_link">
+                    <span class="material-symbols-outlined">
+                        calendar_month
+                    </span>
                     <p>Calendário</p>
                 </a>
-                </div>
-    
-                <div class="iten_menu" id="tasks_menu">
-                    <a href="" class="menu_link">
-                        <span class="material-symbols-outlined">
-                            task_alt
-                        </span>
+            </div>
+
+            <div class="iten_menu" id="tasks_menu">
+                <a href="my_tasks.html" class="menu_link">
+                    <span class="material-symbols-outlined">
+                        task_alt
+                    </span>
                     <p>Tarefas</p>
                 </a>
-                </div>
-    
-                <div class="iten_menu" id="profile_menu">
-                    <a href="" class="menu_link">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
+            </div>
+
+            <div class="iten_menu" id="profile_menu">
+                <a href="profile.html" class="menu_link">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
                     <p>Perfil</p>
                 </a>
-                </div>
-    
-            </footer>
+            </div>
+
+        </footer>
 
 
-        </div> 
-
-
-        
-
-
-
-
-
-
+        </div>
 
     </main>
     <div></div>
 </body>
+
 </html>

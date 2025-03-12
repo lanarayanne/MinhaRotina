@@ -54,7 +54,7 @@ input{
 
 .single{
     flex-grow: 1;
-    /* display: none; */
+    display: none;
 }
 
 .button{
@@ -68,7 +68,7 @@ input{
 }
 .repeat {
     display: flex;
-    display: none;
+    /* display: none; */
 }
 
 .frequency{
