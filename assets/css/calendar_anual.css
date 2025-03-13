@@ -52,8 +52,9 @@ h1 {
     color: #14281D;
 }
 
-.days h2 {
+h2 {
     align-self: center;
+    text-align: center;
 }
 
 
@@ -85,7 +86,7 @@ h1 {
     font-size: 1.5rem;
 }
 
-.calender_days {
+.calendar_days {
     display: flex;
     flex-direction: column;
 }
@@ -151,22 +152,48 @@ h2 {
     font-size: 2.5rem;
 }
 
-.task_background {
+.background {
     background-color: rgba(53, 88, 52, 0.22);
     margin: 1rem 2rem;
-    height: 3rem;
+    height: 3.5rem;
     border-radius: 2rem;
+    position: relative;
+
+}
+
+.progress{
+    width: 70%;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: #2A9D8F; 
 }
 
 .task {
     display: flex;
-    width: 70%;
-    height: 100%;
-    background-color: #2A9D8F;
+    align-items: center;
 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
+.task p:first-child{
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+
+.task p:last-child{
+    font-size: 1.2rem;
+    margin-right: 2rem;
+
+}
+
+#calendar_menu{
+    border-top: #14281D solid 0.5rem;
+}
 
 
 
